@@ -100,6 +100,10 @@ int main(){
             }
         }
         very_long = very_long.substr(0, zero_pos+1);
+        digits_count = very_long.length();
+        if(very_long[digits_count-1] == '.'){
+            very_long.erase(digits_count-1, 1);
+        }
 
         cout << very_long << endl;
     }
